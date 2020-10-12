@@ -1,6 +1,9 @@
-//
-// Created by Max on 10/8/2020.
-//
+/**
+ * This program demonstrates how we can draw a rotating cube using dual quaternions.
+ *
+ * The example is inspired by an opengl tutorial:
+ * https://www.youtube.com/watch?v=vcMox6i8f4Y&list=PLvub-YFU4O4uk64lQjBc7Oxxetf6qXOIm&index=24
+ */
 
 #include "CubeApp.h"
 
@@ -62,13 +65,7 @@ void CubeApp::run() {
         glClear( GL_COLOR_BUFFER_BIT );
 
         // Render OpenGL here
-
-        glPushMatrix( );
-
         drawCube();
-
-        glPopMatrix();
-
 
         // Swap front and back buffers
         glfwSwapBuffers( window );
