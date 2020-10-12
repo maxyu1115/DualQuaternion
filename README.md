@@ -1,4 +1,4 @@
-# Dual Quaternion Cube
+# Dual Quaternion & Cube
 Author: Max Yu, https://github.com/maxyu1115
 
 This is an implementation of Dual Quaternions, and along side I implemented a rotating cube as a demo.
