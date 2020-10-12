@@ -3,7 +3,7 @@
 //
 
 #include "DualQuaternionGeometry.h"
-#include <math.h>
+#include <cmath>
 
 void dq_to_vertex(vertex out, const dq_t p) {
     out[0] = p[4];
@@ -39,15 +39,15 @@ void dq_from_vector(dq_t out, const vector3 p) {
     out[7] = 0.0f;
 }
 
-int dq_is_point(const dq_t p) {
+bool dq_is_point(const dq_t p) {
     return p[3]!=0.0f && p[0]==0.0f && p[1]==0.0f && p[2]==0.0f && p[7]==0.0f;
 }
 
-int dq_is_vector(const dq_t p) {
+bool dq_is_vector(const dq_t p) {
     return p[3]==0.0f && p[0]==0.0f && p[1]==0.0f && p[2]==0.0f && p[7]==0.0f;
 }
 
-int dq_is_plane(const dq_t p) {
+bool dq_is_plane(const dq_t p) {
     return p[3]==0.0f && p[4]==0.0f && p[5]==0.0f && p[6]==0.0f;
 }
 

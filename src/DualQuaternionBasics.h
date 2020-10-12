@@ -1,5 +1,5 @@
 //
-// Created by Max on 10/9/2020.
+// Created by Max on 10/11/2020.
 //
 
 #ifndef DUALQUATERNION_DUALQUATERNIONBASICS_H
@@ -40,6 +40,5 @@ void dq_sandwhich_map(dq_t out, const dq_t Q, const dq_t p);
 
 // result is a dual real. However, in a lot of situations we only care about the real part.
 float dq_dot(float * dual, const dq_t p, const dq_t q);
-
 
 #endif //DUALQUATERNION_DUALQUATERNIONBASICS_H

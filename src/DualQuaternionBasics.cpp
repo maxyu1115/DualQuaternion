@@ -1,5 +1,5 @@
 //
-// Created by Max on 10/9/2020.
+// Created by Max on 10/11/2020.
 //
 
 #include "DualQuaternionBasics.h"

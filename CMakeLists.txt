@@ -8,7 +8,10 @@ include_directories("D:/cpp libraries/glfw-3.3.2/include")
 link_directories("D:/cpp libraries/glew-2.1.0/lib/Release/Win32")
 link_directories("D:/cpp libraries/glfw-3.3.2/lib-vc2019")
 
-add_executable(DualQuaternion src/main.cpp src/CubeApp.cpp src/CubeApp.h src/DualQuaternionBasics.c src/DualQuaternionBasics.h src/DualQuaternionGeometry.h src/DualQuaternionGeometry.c)
+add_executable(DualQuaternion src/main.cpp
+        src/CubeApp.cpp src/CubeApp.h
+        src/DualQuaternionBasics.cpp src/DualQuaternionBasics.h
+        src/DualQuaternionGeometry.cpp src/DualQuaternionGeometry.h)
 
 target_link_libraries(DualQuaternion "glew32.lib" "glew32s.lib")
 target_link_libraries(DualQuaternion "glfw3.lib")
